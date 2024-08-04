@@ -1,5 +1,8 @@
 /**Body-Formatação**/
-
+* {
+    padding: 0px;
+    margin:0px;
+}
 .questionario {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -18,8 +21,8 @@
   }
 
 .cadastro .container{
-    position: absolute;
-    top: 50%;
+    position:relative;
+    top:80%;
     left:50%;
     transform: translate(-50%, -50%);
 
