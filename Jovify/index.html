@@ -1,80 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Nome do App</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-            padding: 20px;
-        }
-        .logo {
-            font-size: 2em;
-            color: #39ff14;
-            margin-bottom: 20px;
-        }
-        .slogan {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .form {
-            margin-bottom: 20px;
-        }
-        .form input {
-            padding: 12px;
-            margin-bottom: 10px;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            font-size: 1em;
-        }
-        .form button {
-            padding: 12px;
-            background-color: #39ff14;
-            border: none;
-            border-radius: 5px;
-            color: #000;
-            cursor: pointer;
-            font-size: 1em;
-            width: 100%;
-            max-width: 300px;
-            margin: 0 auto;
-            display: block;
-        }
-        .forgot-password {
-            margin-top: 10px;
-            font-size: 0.8em;
-            color: #39ff14;
-            text-decoration: none;
-            display: inline-block;
-        }
-    </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body class="index">
     <div class="container">
-        <div class="logo">Jovify</div>
-        <div class="slogan">Conectando jovens ao futuro!</div>
-        <form class="form" action="php/login.php" method="POST">
-            <input type="text" name="username_email" placeholder="Usuário ou E-mail" required>
-            <input type="password" name="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-            <a href="#" class="forgot-password">Esqueci minha senha</a>
-        </form>
+      <div class="logo">Jovify</div>
+      <div class="slogan">Conectando jovens ao futuro!</div>
+      <form class="form" action="php/login.php" method="POST">
+        <input
+          type="text"
+          name="username_email"
+          placeholder="Usuário ou E-mail"
+          required
+        />
+        <input type="password" name="password" placeholder="Senha" required />
+        <div class="row mt-3 mb-2">
+            <div class="col-12 d-flex justify-content-between">
+                <div class="col-6"><button type="submit" class="btn">Entrar</button>
+                </div>
+                <div class="col-6"><a href="cadastro_usuario.html" class="btn my-auto">Cadastrar</a></div>
+            </div>
+        </div>
+        <a href="#" class="forgot-password">Esqueci minha senha</a>
+      </form>
     </div>
-</body>
+  </body>
 </html>
