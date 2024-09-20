@@ -5,7 +5,7 @@ use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\QuestionarioController;
 
-Route::get('/cadastro', [UsuarioController::class, 'showForm'])->name('signup.form');
+Route::get('/cadastro', [UsuarioController::class, 'showForm'])->name('signup.showForm');
 Route::post('/signup', [UsuarioController::class, 'register'])->name('signup.register');
 
 Route::get('/login', [LoginController::class, 'showForm'])->name('login');

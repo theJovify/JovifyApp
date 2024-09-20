@@ -39,6 +39,6 @@ class UsuarioController extends Controller
             'password' => Hash::make($request->input('password')),
         ]);
 
-        return redirect()->route('auth/signup.form')->with('success', 'Usuário cadastrado com sucesso!');
+        return redirect()->route('login')->with('success', 'Usuário cadastrado com sucesso!');
     }
 }
